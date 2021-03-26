@@ -6,12 +6,14 @@ import './App.css';
 import {Provider} from "react-redux"
 import {store} from "./redux_folder/store"
 import  ContactAppREdux from "./components/contact_app_redux"
+import Table_Task from "./components/Table_Task"
 
 function App() {
   return (
     <div className="App">
       <Provider store = {store}>
-        <ContactAppREdux />
+        {/* <ContactAppREdux /> */}
+        < Table_Task />
       </Provider>
       
     </div>
